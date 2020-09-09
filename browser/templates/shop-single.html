@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{%load static %}
+
+<!-- Extra head here -->
+{% block extrahead %}
+<title>Rượu trắng (men bắc) ngon, thơm lừng - Cửa hàng Rượu Hinh</title>
+<meta name="description"
+    content="Tìm mua rượu trắng: rượu trắng 20 lít, 10 lít, 5 lít. Rượu trắng tại rượu được nấu từ gạo tẻ, men bắc theo phương pháp truyền thống. ">
+{% endblock extrahead %}
+
+
+
+<!-- Content here -->
+{% block content %}
+<section class="page-title" style="background-image: url(/browser/static/images/background/8.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1>Thuốc gia truyền<nav></nav>
+            </h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'trang-chu' %}">Trang chủ</a></li>
+                <li>Thuốc gia truyền<nav></nav>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!-- Sidebar Page Container -->
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!--Content Side-->
+            <div class="content-side col-lg-12 col-md-12 col-sm-12">
+                <div class="shop-single">
+                    <div class="product-details">
+                        <!--Basic Details-->
+                        <div class="basic-details">
+                            <div class="row clearfix">
+                                <div class="image-column col-md-6 col-sm-12">
+                                    <figure class="image-box"><a
+                                            href="/browser/static/images/resource/products/product-sinlge.jpg"
+                                            class="lightbox-image" title="Image Caption Here"><img
+                                                src="/browser/static/images/resource/products/product-sinlge.jpg"
+                                                alt=""></a></figure>
+                                </div>
+                                <div class="info-column col-md-6 col-sm-12">
+                                    <div class="details-header">
+                                        <h4>Thuốc gia truyền</h4>
+                                        <div class="item-price">$25.00 <del>$30</del></div>
+                                    </div>
+
+                                    <div class="text">There are many variations of passages of Lorem Ipsum available,
+                                        but the majority have suffered alteration in some form, by injected humour, or
+                                        randomised words which don't look even slightly believable. If you are going.
+                                    </div>
+                                    <div class="other-options clearfix m-0">
+                                        <button type="button" class="theme-btn btn-style-one add-to-cart m-0 p-3"><span
+                                                class="btn-title">Liên hệ Bác sĩ để nhận tư vấn, đặt mua</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Basic Details-->
+
+                        <!--Product Info Tabs-->
+                        <div class="product-info-tabs">
+                            <!--Product Tabs-->
+                            <div class="prod-tabs tabs-box">
+                                <!--Tabs Container-->
+                                <div class="tabs-content">
+
+                                    <!--Tab-->
+                                    <div class="tab d-block">
+                                        <div class="content">
+                                            <h3>Hướng dẫn sử dụng</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat. sunt in culpa qui officia deserunt mollit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Product Info Tabs-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Sidebar Container -->
+
+{% endblock content %}

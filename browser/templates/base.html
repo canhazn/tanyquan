@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta name="google" content="notranslate" />
+    <link rel="canonical" href="{{ request.build_absolute_uri  }}" />
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" />
+    <meta http-equiv="content-language" content="vi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/revolution/css/settings.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/revolution/css/layers.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/revolution/css/navigation.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    {% block extrahead %}{% endblock extrahead %}
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="page-wrapper">
+        <div class="preloader"></div>
+
+
+        {% include 'component/header.html' %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% include 'component/footer.html' %}
+    </div>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!--Revolution Slider-->
+    <script src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <script src="{% static 'js/main-slider-script.js' %}"></script>
+    <!--Revolution Slider-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/mmenu.polyfills.js' %}"></script>
+    <script src="{% static 'js/jquery.modal.min.js' %}"></script>
+    <script src="{% static 'js/mmenu.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

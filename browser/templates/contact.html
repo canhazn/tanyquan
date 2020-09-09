@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{%load static %}
+
+<!-- Extra head here -->
+{% block extrahead %}
+<title>Rượu Hinh | rượu trắng, men bắc, thơm mùi rượu quê.</title>
+<meta name="description" content="">
+<style>
+    #map {
+        height: 480px;
+    }
+
+    @media (max-width: 576px) {
+        #map {
+            height: 280px;
+        }
+    }
+</style>
+{% endblock extrahead %}
+
+
+
+<!-- Content here -->
+{% block content %}
+<!--Page Title-->
+<section class="page-title" style="background-image: url(/browser/static/images/background/8.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1>Liên hệ </h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'trang-chu' %}">Trang chủ</a></li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!-- Map Section -->
+<section class="map-section">
+    <div class="auto-container">
+        <div id="map" class="map-outer">
+            <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.5415679784314!2d105.54021981430513!3d21.44725687873682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134e903edc2faad%3A0xc1bfd8d4cc65c761!2zbmjDoCBIaW5oIE3hur9u!5e0!3m2!1sen!2s!4v1599114801124!5m2!1sen!2s"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+</section>
+<!-- End Map Section -->
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="small-container">
+        <div class="sec-title text-center">
+            <span class="sub-title">Liên hệ</span>
+            <h2>Đặt câu hỏi</h2>
+            <span class="divider"></span>
+        </div>
+
+        <!-- Contact box -->
+        <div class="contact-box">
+            <div class="row">
+                <div class="contact-info-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner">
+                        <span class="icon flaticon-worldwide"></span>
+                        <h4><strong>Địa chỉ</strong></h4>
+                        <p>Xã Hồ Sơn<br>Tam Đảo - Vĩnh Phúc</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner">
+                        <span class="icon flaticon-phone"></span>
+                        <h4><strong>Điện thoại</strong></h4>
+                        <p><a href="#">094 791 64 84</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner">
+                        <span class="icon flaticon-email"></span>
+                        <h4><strong>Email</strong></h4>
+                        <p><a href="mailto:bstungtd@example.com">bstungtd@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form box -->
+        <div class="form-box">
+            <div class="contact-form">
+                <form action="#" method="post" id="email-form">
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <div class="response"></div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="username" class="username" placeholder="Họ và tên *">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="username" class="username" placeholder="Số điện thoại">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <textarea name="contact_message" class="message" placeholder="Câu hỏi"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group col-lg-12 text-center pt-3">
+                            <button class="theme-btn btn-style-one" type="button" id="submit" name="submit-form"><span
+                                    class="btn-title">Đặt câu hỏi</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Contact Section -->
+
+<!--End Clients Section -->
+{% endblock content %}
